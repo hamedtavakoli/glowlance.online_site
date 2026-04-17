@@ -3,83 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlowLance | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <title>VocabGlow | Learn vocabulary while you browse</title>
+  <meta name="description" content="VocabGlow is a Chrome extension that helps you learn vocabulary while you browse with instant lookup, translation, saved words, and review tools.">
+  <link rel="icon" type="image/png" href="assets/images/icon-placeholder.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html">GlowLance</a>
-        <div class="nav-links">
-          <a class="active" href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
+      <div class="header-shell">
+        <a class="brand" href="index.html" aria-label="VocabGlow home">
+          <img src="assets/images/logo-placeholder.png" alt="VocabGlow logo placeholder" width="40" height="40">
+          <span>VocabGlow</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="features.html">Features</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="whats-new.html">What's New</a>
+          <a href="help.html">Help</a>
+          <a href="privacy.html">Privacy</a>
+          <a class="button button-primary button-nav" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+        </nav>
+      </div>
     </div>
   </header>
-
-  <main>
+  <main id="main-content">
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Creative Digital Studio</p>
-          <h1>Simple websites that look polished and load fast.</h1>
-          <p class="lead">
-            GlowLance helps small teams launch clear, modern web experiences with practical design,
-            lightweight code, and content that feels approachable.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="services.html">Explore Services</a>
-            <a class="button button-secondary" href="contact.html">Get in Touch</a>
+        <div class="hero-copy">
+          <p class="eyebrow">Chrome Extension for Everyday Vocabulary Practice</p>
+          <h1>Learn vocabulary while you browse.</h1>
+          <p class="lead">VocabGlow helps you look up words instantly, save what matters, and build a practical personal vocabulary system without breaking your reading flow.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+            <a class="button button-secondary" href="how-it-works.html">See How It Works</a>
           </div>
-        </div>
-        <div class="hero-card">
-          <h2>What you get</h2>
-          <ul class="feature-list">
-            <li>Responsive static pages</li>
-            <li>Clean shared styling</li>
-            <li>Simple navigation between pages</li>
-            <li>Easy-to-edit HTML structure</li>
+          <ul class="hero-points" aria-label="Key benefits">
+            <li>Instant word lookup and translation</li>
+            <li>Save vocabulary for later review</li>
+            <li>Stay focused while reading real content</li>
           </ul>
+        </div>
+        <div class="hero-media panel">
+          <!-- Replace hero-placeholder.png with a real extension marketing image or product screenshot. -->
+          <img src="assets/images/hero-placeholder.png" alt="Placeholder for VocabGlow hero product preview" width="720" height="520">
+          <p class="image-caption">Placeholder hero visual for the extension landing section.</p>
         </div>
       </div>
     </section>
-
     <section class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Why This Setup</p>
-          <h2>A straightforward starter site for common business needs.</h2>
+          <p class="eyebrow">How It Works</p>
+          <h2>A simple flow you can use in seconds.</h2>
+          <p>Use VocabGlow as you browse, capture useful vocabulary, and revisit it later when you are ready.</p>
         </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Home Page</h3>
-            <p>Introduces the brand, highlights value, and gives visitors a clear first action.</p>
-          </article>
-          <article class="card">
-            <h3>About Page</h3>
-            <p>Explains the story, working style, and the people or purpose behind the business.</p>
-          </article>
-          <article class="card">
-            <h3>Services Page</h3>
-            <p>Lists the main offerings in a clean layout that is easy to expand later.</p>
-          </article>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-number">1</span><h3>Select a word</h3><p>Highlight a word on a webpage when something new or useful catches your attention.</p></article>
+          <article class="step-card"><span class="step-number">2</span><h3>See meanings instantly</h3><p>Open the helper popup or use the context menu to view definitions and translation support.</p></article>
+          <article class="step-card"><span class="step-number">3</span><h3>Save it</h3><p>Add valuable words to your personal list so they are easy to revisit later.</p></article>
+          <article class="step-card"><span class="step-number">4</span><h3>Review later</h3><p>Come back through your popup, saved list, highlights, or reminder workflow.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Key Features</p>
+          <h2>Built for low-friction vocabulary learning.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><h3>Instant word lookup</h3><p>Understand unfamiliar words without leaving the page you are reading.</p></article>
+          <article class="feature-card"><h3>Translation support</h3><p>Get quick language support when a direct meaning helps you move faster.</p></article>
+          <article class="feature-card"><h3>Save and manage vocabulary</h3><p>Build your own working vocabulary list instead of losing useful words.</p></article>
+          <article class="feature-card"><h3>Highlight saved words across the web</h3><p>See familiar study words again while browsing to reinforce memory naturally.</p></article>
+          <article class="feature-card"><h3>Review reminders</h3><p>Return to saved vocabulary with light reminders that support regular practice.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container value-grid">
+        <div>
+          <p class="eyebrow">Why VocabGlow</p>
+          <h2>Practical learning that fits real browsing habits.</h2>
+        </div>
+        <div class="panel text-panel">
+          <p>Learn without interrupting browsing, combine lookup and review in one workflow, and keep your vocabulary practice simple, practical, and low-friction.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container two-column">
+        <article class="panel text-panel">
+          <p class="eyebrow">About</p>
+          <h2>Built to make vocabulary learning feel more natural.</h2>
+          <p>VocabGlow is designed to help learners grow vocabulary through everyday reading, not separate study sessions alone. It is built by Glowlance with a focus on clarity, usefulness, and a smoother browsing experience.</p>
+        </article>
+        <article class="panel text-panel trust-panel">
+          <p class="eyebrow">Privacy and Trust</p>
+          <h2>Clear, lightweight, and respectful.</h2>
+          <ul class="check-list">
+            <li>No tracking</li>
+            <li>No analytics</li>
+            <li>No personal data collection</li>
+            <li>User data stays local where applicable</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="section final-cta">
+      <div class="container">
+        <div class="cta-panel">
+          <p class="eyebrow">Start Browsing Smarter</p>
+          <h2>Add VocabGlow to Chrome and build vocabulary as you read.</h2>
+          <p>Designed for learners, students, and professionals who want a more natural way to grow vocabulary online.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+            <a class="button button-secondary" href="features.html">Explore Features</a>
+          </div>
         </div>
       </div>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="container footer-row">
-      <p>&copy; 2026 GlowLance. All rights reserved.</p>
-      <a href="contact.html">Contact Us</a>
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-title">VocabGlow</h2>
+        <p class="footer-copy">A focused vocabulary companion for learning while you browse.</p>
+        <p class="footer-copy">© 2026 VocabGlow. Built by Glowlance.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="help.html">Help</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="whats-new.html">What's New</a>
+        <a href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Chrome Store</a>
+        <a href="https://www.paypal.com/donate/?business=YBML53DRW2X3C&amount=2&no_recurring=0&item_name=Hey%21+I%E2%80%99m+Hamed.+Your+support+keeps+the+coffee+flowing+and+VocabGlow+growing%21+Thanks+for+the+high-five%21&currency_code=AUD" target="_blank" rel="noopener noreferrer">Support the project</a>
+      </nav>
     </div>
   </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
