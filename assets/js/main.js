@@ -1,3 +1,43 @@
+function injectPartialMarkup(target, markup) {
+  target.outerHTML = markup;
+}
+
+function loadPartialFromIframe(partialPath) {
+  return new Promise(function (resolve, reject) {
+    var iframe = document.createElement("iframe");
+
+    iframe.style.display = "none";
+    iframe.setAttribute("aria-hidden", "true");
+
+    iframe.onload = function () {
+      try {
+        var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        var markup = iframeDocument && iframeDocument.body ? iframeDocument.body.innerHTML : "";
+
+        iframe.remove();
+
+        if (!markup.trim()) {
+          reject(new Error("Partial loaded but returned no markup: " + partialPath));
+          return;
+        }
+
+        resolve(markup);
+      } catch (error) {
+        iframe.remove();
+        reject(error);
+      }
+    };
+
+    iframe.onerror = function () {
+      iframe.remove();
+      reject(new Error("Unable to load partial from iframe fallback: " + partialPath));
+    };
+
+    iframe.src = partialPath;
+    document.body.appendChild(iframe);
+  });
+}
+
 function loadPartial(target) {
   var partialPath = target.getAttribute("data-include");
 
@@ -13,8 +53,15 @@ function loadPartial(target) {
 
       return response.text();
     })
+    .catch(function () {
+      if (window.location.protocol === "file:") {
+        return loadPartialFromIframe(partialPath);
+      }
+
+      throw new Error("Unable to load partial: " + partialPath);
+    })
     .then(function (markup) {
-      target.outerHTML = markup;
+      injectPartialMarkup(target, markup);
     })
     .catch(function (error) {
       console.error(error);
