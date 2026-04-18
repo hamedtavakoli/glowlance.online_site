@@ -8,44 +8,28 @@
   <link rel="icon" type="image/png" href="assets/images/icon-placeholder.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-shell">
-        <a class="brand" href="index.html" aria-label="VocabGlow home">
-          <img src="assets/images/logo-placeholder.png" alt="VocabGlow logo placeholder" width="40" height="40">
-          <span>VocabGlow</span>
-        </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="nav-toggle-bar"></span>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="features.html">Features</a>
-          <a href="how-it-works.html">How It Works</a>
-          <a href="whats-new.html">What's New</a>
-          <a href="help.html">Help</a>
-          <a href="privacy.html">Privacy</a>
-          <a class="button button-primary button-nav" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+<body data-page="home">
+  <div data-include="partials/header.html"></div>
+
   <main id="main-content">
+    <!--
+      Section Name: Homepage Hero
+      Purpose: Introduces VocabGlow, explains the core value quickly, and drives visitors toward the main CTA.
+      Content Belongs Here: Main headline, supporting paragraph, hero buttons, key benefit bullets, and the main product visual.
+      Update When: The positioning message changes, the store CTA changes, or a better hero image/screenshot becomes available.
+    -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Chrome Extension for Everyday Vocabulary Practice</p>
           <h1>Learn vocabulary while you browse.</h1>
           <p class="lead">VocabGlow helps you look up words instantly, save what matters, and build a practical personal vocabulary system without breaking your reading flow.</p>
+          <!-- CTA Section Start: Homepage hero buttons. Update when the primary action or supporting link should change. -->
           <div class="button-row">
             <a class="button button-primary" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
             <a class="button button-secondary" href="how-it-works.html">See How It Works</a>
           </div>
+          <!-- CTA Section End -->
           <ul class="hero-points" aria-label="Key benefits">
             <li>Instant word lookup and translation</li>
             <li>Save vocabulary for later review</li>
@@ -53,42 +37,66 @@
           </ul>
         </div>
         <div class="hero-media panel">
-          <!-- Replace hero-placeholder.png with a real extension marketing image or product screenshot. -->
+          <!-- Screenshot Block Start: Homepage hero preview. Replace this image and caption when a polished product visual is ready. -->
           <img src="assets/images/hero-placeholder.png" alt="Placeholder for VocabGlow hero product preview" width="720" height="520">
-          <p class="image-caption">Placeholder hero visual for the extension landing section.</p>
+          <p class="image-caption">Replace this placeholder with a real extension marketing image or product screenshot.</p>
+          <!-- Screenshot Block End -->
         </div>
       </div>
     </section>
+
+    <!--
+      Section Name: How It Works Summary
+      Purpose: Gives visitors a quick overview of the user journey before they click deeper into the full explanation page.
+      Content Belongs Here: Short process intro and the four-step summary cards.
+      Update When: The extension workflow changes or the step descriptions need to be simplified.
+    -->
     <section class="section">
-      <div class="container">
+      <div class="container section-shell">
         <div class="section-heading">
           <p class="eyebrow">How It Works</p>
           <h2>A simple flow you can use in seconds.</h2>
           <p>Use VocabGlow as you browse, capture useful vocabulary, and revisit it later when you are ready.</p>
         </div>
         <div class="steps-grid">
-          <article class="step-card"><span class="step-number">1</span><h3>Select a word</h3><p>Highlight a word on a webpage when something new or useful catches your attention.</p></article>
-          <article class="step-card"><span class="step-number">2</span><h3>See meanings instantly</h3><p>Open the helper popup or use the context menu to view definitions and translation support.</p></article>
-          <article class="step-card"><span class="step-number">3</span><h3>Save it</h3><p>Add valuable words to your personal list so they are easy to revisit later.</p></article>
-          <article class="step-card"><span class="step-number">4</span><h3>Review later</h3><p>Come back through your popup, saved list, highlights, or reminder workflow.</p></article>
+          <article class="step-card card"><span class="step-number">1</span><h3>Select a word</h3><p>Highlight a word on a webpage when something new or useful catches your attention.</p></article>
+          <article class="step-card card"><span class="step-number">2</span><h3>See meanings instantly</h3><p>Open the helper popup or use the context menu to view definitions and translation support.</p></article>
+          <article class="step-card card"><span class="step-number">3</span><h3>Save it</h3><p>Add valuable words to your personal list so they are easy to revisit later.</p></article>
+          <article class="step-card card"><span class="step-number">4</span><h3>Review later</h3><p>Come back through your popup, saved list, highlights, or reminder workflow.</p></article>
         </div>
       </div>
     </section>
+
+    <!--
+      Section Name: Feature Highlights
+      Purpose: Surfaces the most important product capabilities in a quick scan-friendly grid.
+      Content Belongs Here: Short feature cards describing the core benefits visitors should notice first.
+      Update When: A major feature is added, removed, renamed, or reprioritised for marketing.
+    -->
     <section class="section section-alt">
-      <div class="container">
+      <div class="container section-shell">
         <div class="section-heading">
           <p class="eyebrow">Key Features</p>
           <h2>Built for low-friction vocabulary learning.</h2>
         </div>
+        <!-- Feature Cards Start: Duplicate one card, update the heading and copy, and keep the most important features first. -->
         <div class="feature-grid">
-          <article class="feature-card"><h3>Instant word lookup</h3><p>Understand unfamiliar words without leaving the page you are reading.</p></article>
-          <article class="feature-card"><h3>Translation support</h3><p>Get quick language support when a direct meaning helps you move faster.</p></article>
-          <article class="feature-card"><h3>Save and manage vocabulary</h3><p>Build your own working vocabulary list instead of losing useful words.</p></article>
-          <article class="feature-card"><h3>Highlight saved words across the web</h3><p>See familiar study words again while browsing to reinforce memory naturally.</p></article>
-          <article class="feature-card"><h3>Review reminders</h3><p>Return to saved vocabulary with light reminders that support regular practice.</p></article>
+          <article class="feature-card card"><h3>Instant word lookup</h3><p>Understand unfamiliar words without leaving the page you are reading.</p></article>
+          <article class="feature-card card"><h3>Translation support</h3><p>Get quick language support when a direct meaning helps you move faster.</p></article>
+          <article class="feature-card card"><h3>Save and manage vocabulary</h3><p>Build your own working vocabulary list instead of losing useful words.</p></article>
+          <article class="feature-card card"><h3>Highlight saved words across the web</h3><p>See familiar study words again while browsing to reinforce memory naturally.</p></article>
+          <article class="feature-card card"><h3>Review reminders</h3><p>Return to saved vocabulary with light reminders that support regular practice.</p></article>
         </div>
+        <!-- Feature Cards End -->
       </div>
     </section>
+
+    <!--
+      Section Name: Value Proposition
+      Purpose: Reinforces why the extension matters in practical day-to-day use.
+      Content Belongs Here: Short explanation of the learning benefit and the product's overall promise.
+      Update When: The brand message changes or you want to refine the main value statement.
+    -->
     <section class="section">
       <div class="container value-grid">
         <div>
@@ -100,6 +108,13 @@
         </div>
       </div>
     </section>
+
+    <!--
+      Section Name: Brand and Trust
+      Purpose: Explains the product intent and reassures visitors about privacy and lightweight usage.
+      Content Belongs Here: About copy, trust language, and the privacy-focused checklist.
+      Update When: The company story changes, privacy positioning changes, or trust statements need to be updated.
+    -->
     <section class="section section-alt">
       <div class="container two-column">
         <article class="panel text-panel">
@@ -119,9 +134,17 @@
         </article>
       </div>
     </section>
+
+    <!--
+      Section Name: Final Call To Action
+      Purpose: Gives visitors one clear next step after they finish reading the homepage.
+      Content Belongs Here: Closing headline, short supporting copy, and the final CTA button pair.
+      Update When: The main conversion goal changes, the CTA destinations change, or launch messaging is refreshed.
+    -->
     <section class="section final-cta">
       <div class="container">
-        <div class="cta-panel">
+        <!-- CTA Section Start: Homepage closing CTA. Update the message and links when the primary conversion flow changes. -->
+        <div class="cta-panel card">
           <p class="eyebrow">Start Browsing Smarter</p>
           <h2>Add VocabGlow to Chrome and build vocabulary as you read.</h2>
           <p>Designed for learners, students, and professionals who want a more natural way to grow vocabulary online.</p>
@@ -130,25 +153,12 @@
             <a class="button button-secondary" href="features.html">Explore Features</a>
           </div>
         </div>
+        <!-- CTA Section End -->
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h2 class="footer-title">VocabGlow</h2>
-        <p class="footer-copy">A focused vocabulary companion for learning while you browse.</p>
-        <p class="footer-copy">© 2026 VocabGlow. Built by Glowlance.</p>
-      </div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="help.html">Help</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="whats-new.html">What's New</a>
-        <a href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Chrome Store</a>
-        <a href="https://www.paypal.com/donate/?business=YBML53DRW2X3C&amount=2&no_recurring=0&item_name=Hey%21+I%E2%80%99m+Hamed.+Your+support+keeps+the+coffee+flowing+and+VocabGlow+growing%21+Thanks+for+the+high-five%21&currency_code=AUD" target="_blank" rel="noopener noreferrer">Support the project</a>
-      </nav>
-    </div>
-  </footer>
+
+  <div data-include="partials/footer.html"></div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

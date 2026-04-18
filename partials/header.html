@@ -1,0 +1,32 @@
+<!--
+  Section Name: Site Header
+  Purpose: Displays the shared brand, primary navigation, and main store CTA across the whole website.
+  Content Belongs Here: Skip link, logo, mobile menu button, page navigation links, and the shared "Add to Chrome" button.
+  Update When: The site navigation changes, branding assets are replaced, the Chrome Store URL changes, or header wording needs to be refreshed.
+-->
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <div class="header-shell">
+      <a class="brand" href="index.html" aria-label="VocabGlow home">
+        <img src="assets/images/logo-placeholder.png" alt="VocabGlow logo placeholder" width="40" height="40">
+        <span>VocabGlow</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-nav-link="home">Home</a>
+        <a href="features.html" data-nav-link="features">Features</a>
+        <a href="how-it-works.html" data-nav-link="how-it-works">How It Works</a>
+        <a href="whats-new.html" data-nav-link="whats-new">What's New</a>
+        <a href="help.html" data-nav-link="help">Help</a>
+        <a href="privacy.html" data-nav-link="privacy">Privacy</a>
+        <a class="button button-primary button-nav" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
+      </nav>
+    </div>
+  </div>
+</header>

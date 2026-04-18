@@ -3,31 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VocabGlow What’s New</title>
+  <title>VocabGlow | What's New</title>
   <meta name="description" content="Track the latest VocabGlow improvements and release notes, including current updates and previous version history.">
   <link rel="icon" type="image/png" href="assets/images/icon-placeholder.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-shell">
-        <a class="brand" href="index.html" aria-label="VocabGlow home"><img src="assets/images/logo-placeholder.png" alt="VocabGlow logo placeholder" width="40" height="40"><span>VocabGlow</span></a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="sr-only">Toggle navigation</span></button>
-        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
-          <a href="features.html">Features</a>
-          <a href="how-it-works.html">How It Works</a>
-          <a href="whats-new.html" aria-current="page">What's New</a>
-          <a href="help.html">Help</a>
-          <a href="privacy.html">Privacy</a>
-          <a class="button button-primary button-nav" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+<body data-page="whats-new">
+  <div data-include="partials/header.html"></div>
+
   <main id="main-content">
+    <!--
+      Section Name: What's New Hero
+      Purpose: Introduces the release notes page and explains that this is the running update log.
+      Content Belongs Here: Eyebrow, heading, and a short explanation of the release history.
+      Update When: The intro text should better reflect the release process or the purpose of this page changes.
+    -->
     <section class="page-hero">
       <div class="container narrow-copy">
         <p class="eyebrow">What's New</p>
@@ -35,12 +25,29 @@
         <p class="lead">This page tracks improvements and updates so it is easy to see what changed across versions and maintain the history manually over time.</p>
       </div>
     </section>
+
+    <!--
+      Section Name: Release History
+      Purpose: Lists VocabGlow releases in reverse chronological order so visitors can quickly see the newest updates first.
+      Content Belongs Here: Release cards with version number, date, short highlight line, and bullet list of changes.
+      Update When: A new extension version is released or older entries need wording corrections.
+    -->
     <section class="section">
       <div class="container release-stack">
-        <!-- Repeat this release-entry block for each new version. Keep the latest release at the top. -->
-        <article class="release-card">
+        <!--
+          Release History Update Instructions:
+          1. Copy one complete release card between the "Release Entries Start" and "Release Entries End" markers.
+          2. Paste the copied card at the top of the list so the newest release stays first.
+          3. Update the version number, release date, highlight sentence, and bullet list.
+          4. Keep only the newest release marked with the "Latest" badge.
+        -->
+        <!-- Release Entries Start: Keep newest release first. Copy an existing release-card, paste it at the top, then update version, date, highlight text, and bullets. -->
+        <article class="release-card card">
           <div class="release-header">
-            <div><p class="release-version">Version 1.4.1</p><p class="release-date">April 15, 2026</p></div>
+            <div>
+              <p class="release-version">Version 1.4.1</p>
+              <p class="release-date">April 15, 2026</p>
+            </div>
             <span class="release-badge">Latest</span>
           </div>
           <p class="release-highlight">A cleaner update focused on smoothing the word lookup and review experience.</p>
@@ -50,9 +57,13 @@
             <li>Included smaller usability improvements across the extension experience.</li>
           </ul>
         </article>
-        <!-- Repeat this release-entry block for each new version. -->
-        <article class="release-card">
-          <div class="release-header"><div><p class="release-version">Version 1.4.0</p><p class="release-date">March 30, 2026</p></div></div>
+        <article class="release-card card">
+          <div class="release-header">
+            <div>
+              <p class="release-version">Version 1.4.0</p>
+              <p class="release-date">March 30, 2026</p>
+            </div>
+          </div>
           <p class="release-highlight">Expanded the vocabulary workflow with better visibility and organisation tools.</p>
           <ul class="release-list">
             <li>Improved saved-word management for a clearer personal vocabulary workflow.</li>
@@ -60,9 +71,13 @@
             <li>Updated parts of the interface for a cleaner day-to-day experience.</li>
           </ul>
         </article>
-        <!-- Repeat this release-entry block for each new version. -->
-        <article class="release-card">
-          <div class="release-header"><div><p class="release-version">Version 1.3.0</p><p class="release-date">February 18, 2026</p></div></div>
+        <article class="release-card card">
+          <div class="release-header">
+            <div>
+              <p class="release-version">Version 1.3.0</p>
+              <p class="release-date">February 18, 2026</p>
+            </div>
+          </div>
           <p class="release-highlight">Strengthened the core browsing-to-review loop for regular learning.</p>
           <ul class="release-list">
             <li>Expanded the workflow for saving and revisiting useful words.</li>
@@ -70,21 +85,12 @@
             <li>Addressed smaller quality improvements across the extension UI.</li>
           </ul>
         </article>
+        <!-- Release Entries End -->
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><h2 class="footer-title">VocabGlow</h2><p class="footer-copy">A focused vocabulary companion for learning while you browse.</p><p class="footer-copy">© 2026 VocabGlow. Built by Glowlance.</p></div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="help.html">Help</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="whats-new.html">What's New</a>
-        <a href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Chrome Store</a>
-        <a href="https://www.paypal.com/donate/?business=YBML53DRW2X3C&amount=2&no_recurring=0&item_name=Hey%21+I%E2%80%99m+Hamed.+Your+support+keeps+the+coffee+flowing+and+VocabGlow+growing%21+Thanks+for+the+high-five%21&currency_code=AUD" target="_blank" rel="noopener noreferrer">Support the project</a>
-      </nav>
-    </div>
-  </footer>
+
+  <div data-include="partials/footer.html"></div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

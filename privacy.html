@@ -8,26 +8,16 @@
   <link rel="icon" type="image/png" href="assets/images/icon-placeholder.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="container">
-      <div class="header-shell">
-        <a class="brand" href="index.html" aria-label="VocabGlow home"><img src="assets/images/logo-placeholder.png" alt="VocabGlow logo placeholder" width="40" height="40"><span>VocabGlow</span></a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="nav-toggle-bar"></span><span class="sr-only">Toggle navigation</span></button>
-        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-          <a href="index.html">Home</a>
-          <a href="features.html">Features</a>
-          <a href="how-it-works.html">How It Works</a>
-          <a href="whats-new.html">What's New</a>
-          <a href="help.html">Help</a>
-          <a href="privacy.html" aria-current="page">Privacy</a>
-          <a class="button button-primary button-nav" href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Add to Chrome</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+<body data-page="privacy">
+  <div data-include="partials/header.html"></div>
+
   <main id="main-content">
+    <!--
+      Section Name: Privacy Hero
+      Purpose: Introduces the privacy page and frames the content as a clear plain-language explanation.
+      Content Belongs Here: Page eyebrow, privacy headline, and a short summary of the privacy approach.
+      Update When: The privacy positioning changes or this page needs a clearer intro.
+    -->
     <section class="page-hero">
       <div class="container narrow-copy">
         <p class="eyebrow">Privacy</p>
@@ -35,28 +25,46 @@
         <p class="lead">This page explains how VocabGlow handles data in plain language and why the extension aims to stay lightweight and respectful of user privacy.</p>
       </div>
     </section>
+
+    <!--
+      Section Name: Privacy Policy Blocks
+      Purpose: Breaks the privacy explanation into readable topics so visitors can quickly scan what matters.
+      Content Belongs Here: Summary statements about analytics, permissions, storage, translation support, and what the product does not do.
+      Update When: Data handling changes, permissions change, or privacy wording needs legal or product review.
+    -->
     <section class="section">
       <div class="container policy-stack">
-        <article class="panel text-panel"><h2>Privacy summary</h2><p>VocabGlow is built to help with vocabulary learning while browsing, without turning users into analytics data. The goal is to keep the experience helpful, focused, and easy to trust.</p><ul class="check-list"><li>No analytics</li><li>No tracking</li><li>No personal data collection</li><li>No third-party data sharing</li></ul></article>
-        <article class="panel text-panel"><h2>Permissions explained simply</h2><p>Browser permissions may be needed so the extension can read selected words, display helper information, save vocabulary, highlight saved words, and show reminders where supported. These permissions are used to provide the extension's core functionality, not to profile users.</p></article>
-        <article class="panel text-panel"><h2>Local storage and sync storage</h2><p>Saved words, preferences, and related settings may be stored locally in the browser or in browser extension storage, depending on how the extension is configured. Where applicable, this keeps the data close to the user's own browser environment instead of collecting it as personal data on a separate service.</p></article>
-        <article class="panel text-panel"><h2>Dictionary and translation support</h2><p>VocabGlow may use dictionary or translation-related APIs to provide meanings, pronunciation, examples, synonyms, or translated results. These services are used to return the requested language support and are not intended for analytics or advertising.</p></article>
-        <article class="panel text-panel"><h2>What VocabGlow does not do</h2><p>VocabGlow does not aim to collect personal information, build advertising profiles, or share user information with third parties. The focus is on providing vocabulary help while keeping the experience lightweight and straightforward.</p></article>
+        <article class="panel text-panel">
+          <h2>Privacy summary</h2>
+          <p>VocabGlow is built to help with vocabulary learning while browsing, without turning users into analytics data. The goal is to keep the experience helpful, focused, and easy to trust.</p>
+          <ul class="check-list">
+            <li>No analytics</li>
+            <li>No tracking</li>
+            <li>No personal data collection</li>
+            <li>No third-party data sharing</li>
+          </ul>
+        </article>
+        <article class="panel text-panel">
+          <h2>Permissions explained simply</h2>
+          <p>Browser permissions may be needed so the extension can read selected words, display helper information, save vocabulary, highlight saved words, and show reminders where supported. These permissions are used to provide the extension's core functionality, not to profile users.</p>
+        </article>
+        <article class="panel text-panel">
+          <h2>Local storage and sync storage</h2>
+          <p>Saved words, preferences, and related settings may be stored locally in the browser or in browser extension storage, depending on how the extension is configured. Where applicable, this keeps the data close to the user's own browser environment instead of collecting it as personal data on a separate service.</p>
+        </article>
+        <article class="panel text-panel">
+          <h2>Dictionary and translation support</h2>
+          <p>VocabGlow may use dictionary or translation-related APIs to provide meanings, pronunciation, examples, synonyms, or translated results. These services are used to return the requested language support and are not intended for analytics or advertising.</p>
+        </article>
+        <article class="panel text-panel">
+          <h2>What VocabGlow does not do</h2>
+          <p>VocabGlow does not aim to collect personal information, build advertising profiles, or share user information with third parties. The focus is on providing vocabulary help while keeping the experience lightweight and straightforward.</p>
+        </article>
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><h2 class="footer-title">VocabGlow</h2><p class="footer-copy">A focused vocabulary companion for learning while you browse.</p><p class="footer-copy">© 2026 VocabGlow. Built by Glowlance.</p></div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="help.html">Help</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="whats-new.html">What's New</a>
-        <a href="https://chromewebstore.google.com/detail/vocabglow-%E2%80%93-learn-words-a/imljijnchlopikoipiolikeoeolhlbgb" target="_blank" rel="noopener noreferrer">Chrome Store</a>
-        <a href="https://www.paypal.com/donate/?business=YBML53DRW2X3C&amount=2&no_recurring=0&item_name=Hey%21+I%E2%80%99m+Hamed.+Your+support+keeps+the+coffee+flowing+and+VocabGlow+growing%21+Thanks+for+the+high-five%21&currency_code=AUD" target="_blank" rel="noopener noreferrer">Support the project</a>
-      </nav>
-    </div>
-  </footer>
+
+  <div data-include="partials/footer.html"></div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
