@@ -1,3 +1,4 @@
+// IMPORTANT: Keep this fallback markup in sync with partials/header.html and partials/footer.html.
 var LOCAL_PREVIEW_PARTIALS = {
   "partials/header.html": [
     '<a class="skip-link" href="#main-content">Skip to content</a>',
