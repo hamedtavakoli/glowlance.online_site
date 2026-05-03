@@ -149,6 +149,12 @@ button {
   border-bottom: 1px solid var(--color-line);
 }
 
+@media (max-width: 760px) {
+  .site-header {
+    backdrop-filter: blur(10px);
+  }
+}
+
 .header-shell {
   display: flex;
   align-items: center;
@@ -523,6 +529,25 @@ button {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .button:hover {
+    transform: none;
+  }
 }
 
 .cta-panel .button-row {
